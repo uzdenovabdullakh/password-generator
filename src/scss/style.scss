@@ -1,0 +1,85 @@
+@import 'reset';
+
+body {
+    background-color: #47b9ec;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 320px;
+    background-color: #e0f1e0;
+}
+
+.container{
+    padding: 20px 40px;
+    margin-top: 12rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form.output-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+
+#output{
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(188, 187, 187);
+    padding: 0.5rem 1rem;
+}   
+
+#copy{
+    background-image: url('../../public/image/icons8-copy-paste-24.png');
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    position: relative;
+    top: -30px;
+    right: -195px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-left: 40px;
+    margin-top: -31px;
+}
+
+#pass-length-number{
+    background-color: white;
+    border-radius: 0px;
+    border: 1px solid rgb(188, 187, 187);
+    padding: 0.2rem;
+    text-indent: 0.2rem;
+    width: 33px;
+}
+
+//убрал стрелки у input number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+#generate-btn{
+    background-color: rgb(61, 137, 61);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
